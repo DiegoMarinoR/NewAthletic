@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<!-- Basic -->
+
+<head th:replace="fragments::head">
+
+
+</head>
+
+<body>
+	<!-- Start Main Top -->
+	<div th:replace="fragments::main-top"></div>
+	<!-- End Main Top -->
+
+	<!-- Start Main Top -->
+	<header th:replace="fragments::main-header"> </header>
+	<!-- End Main Top -->
+
+	<!-- Start Top Search -->
+	<div th:replace="fragments::top-search"></div>
+	<!-- End Top Search -->
+
+	<!-- Start All Title Box -->
+	<div th:replace="fragments::slider"></div>
+	<!-- End All Title Box -->
+
+	<!-- Update Personal Information -->
+	<section>
+		<div class="cart-box-main">
+			<div class="container">
+				<h4 th:text="'DETALLES DEL PEDIDO Nº: ' + *{id}"></h4>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Producto</th>
+							<th>Cantidad</th>
+							<th>Precio Unitario</th>
+							<th>Precio Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="orderDetail : ${orderDetails}">
+							<td th:text="${orderDetail.product.name}"></td>
+							<td th:text="${orderDetail.quantity}"></td>
+							<td th:text="${orderDetail.unitPrice}"></td>
+							<td th:text="${orderDetail.quantity} * ${orderDetail.unitPrice}"></td>
+						</tr>
+					</tbody>
+				</table>
+				<a th:href="@{/order}" class="btn btn-secondary" role="button"><i
+					class="fas fa-angle-left"></i> Volver a Pedidos</a>
+			</div>
+		</div>
+	</section>
+
+	<footer th:replace="fragments::footer"></footer>
+
+	<!-- ALL JS FILES -->
+	<div th:replace="fragments::script"></div>
+</body>
+
+</html>

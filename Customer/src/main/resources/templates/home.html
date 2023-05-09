@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<!-- Basic -->
+
+<head th:replace="fragments::head">
+
+</head>
+
+<body>
+<div th:replace="fragments::main-top">
+</div>
+<!-- End Main Top -->
+
+<!-- Start Main Top -->
+<header th:replace="fragments::main-header">
+</header>
+<!-- End Main Top -->
+
+<!-- Start Top Search -->
+<div th:replace="fragments::top-search">
+</div>
+<!-- End Top Search -->
+
+<!-- Start Slider -->
+<div th:replace="fragments::slider">
+</div>
+<!-- End Slider -->
+
+
+<!-- Start About Page  -->
+<div class="about-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="images/Intro.png" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">Somos <span>New Athletic</span></h2>
+                <p align="justify">La empresa fue fundada en el año 2005 gracias al trabajo, esfuerzo y creatividad 
+                	del Sr. Silvio Vila y su esposa la Sra. Nancy Véliz quienes fueron los pioneros
+                	en el país al crear la primer marca completa deportiva 100% peruana.</p>
+                <p align="justify">Hoy en dia, New Athletic esta dentro de las 5 marcas deportivas más grandes del país, 
+                	destacando junto con marcas internacionales, esto gracias a la preferencia del público 
+                	y al arduo trabajo que se hace día a día en búsqueda de la constante innovación para 
+                	ofrecer siempre productos con la más alta calidad para satisfacer los exigentes gustos 
+                	de nuestros clientes y consumidores.</p>
+                <a style="background-color: red;" class="btn hvr-hover" href="#">Leer Más</a>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>¿Quiénes Somos?</h3>
+                    <p align="justify">New Athletic es una marca 100% peruana, líder en calzado, ropa y accesorios deportivos y urbanos.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>Misión</h3>
+                    <p align="justify">New Athletic, tiene como objetivo ayudar a las personas a transitar sus caminos de manera cómoda, 
+                    decidida y fiel a su propio estilo mientras progresan y siguen adelante para alcanzar sus sueños.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>Visión</h3>
+                    <p align="justify">Ser la marca deportiva y urbana líder en el mercado peruano, convirtiéndonos en motivo de orgullo 
+                    nacional para luego apuntar, con ese mismo empuje y credenciales, al mercado internacional.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Start Feed  -->
+<div th:replace="fragments::instagram-box">
+</div>
+
+<!-- End Feed  -->
+
+
+<!-- Start Footer  -->
+<footer th:replace="fragments::footer">
+</footer>
+
+
+<!-- ALL JS FILES -->
+<div th:replace="fragments::script"></div>
+</body>
+
+</html>
